@@ -1,0 +1,36 @@
+/*webkit-sassui-dealcard Start*/
+/*webkit-sassui-dealcard End*/
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #eee;
+}
+
+.test-webkit-sassui-dealcard {
+  font-size: 10px;
+  position: absolute;
+  overflow: hidden;
+  width: 10em;
+  height: 10em;
+  z-index: 1;
+}
+
+.test-webkit-sassui-dealcard:after {
+  content: attr(data-content);
+  font-size: 1.2em;
+  background: #06c1ae;
+  color: #fff;
+  padding: 0.25em;
+  line-height: 1.23em;
+  position: absolute;
+  width: 6.5em;
+  text-align: center;
+  -webkit-transform: rotateZ(-45deg);
+  left: -1.75em;
+  top: 1em;
+}

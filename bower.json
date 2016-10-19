@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-dealcard",
+  "description": "Webkit sass ui module for dealcard.",
+  "main": [
+    "dist/webkit-sassui-dealcard.css",
+    "dist/webkit-sassui-dealcard.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "dealcard"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-cssui-absolute-center",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,26 @@
+/*webkit-sassui-dealcard Start*/
+@mixin webkit-sassui-dealcard($inFontSize:10px,$inBgColor:#06c1ae) {
+  //Your mixin code goes here.
+  font-size: $inFontSize;
+  position: absolute;
+  overflow: hidden;
+  width: 10em;
+  height: 10em;
+  z-index: 1;
+
+  &:after {
+    content: attr(data-content);
+    font-size:1.2em;
+    background: $inBgColor;
+    color: #fff;
+    padding: 0.25em;
+    line-height: 1.23em;
+    position: absolute;
+    width: 6.5em;
+    text-align: center;
+    -webkit-transform: rotateZ(-45deg);
+    left: -1.75em;
+    top: 1em;
+  }
+}
+/*webkit-sassui-dealcard End*/
