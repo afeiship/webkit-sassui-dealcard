@@ -1,5 +1,5 @@
 /*webkit-sassui-dealcard Start*/
-@mixin webkit-sassui-dealcard($inFontSize:10px,$inBgColor:#06c1ae) {
+@mixin webkit-sassui-dealcard($inFontSize:10px,$inBgColor:#f60) {
   //Your mixin code goes here.
   font-size: $inFontSize;
   position: absolute;
@@ -7,6 +7,23 @@
   width: 10em;
   height: 10em;
   z-index: 1;
+
+  &[data-direction=tr]{
+    right: 0;
+    &:after{
+      -webkit-transform: rotateZ(45deg);
+      top: 1em;
+      right: -1.75em;
+    }
+  }
+  &[data-direction=lt]{
+    left:0;
+    &:after{
+      -webkit-transform: rotateZ(-45deg);
+      left: -1.75em;
+      top: 1em;
+    }
+  }
 
   &:after {
     content: attr(data-content);
@@ -18,9 +35,6 @@
     position: absolute;
     width: 6.5em;
     text-align: center;
-    -webkit-transform: rotateZ(-45deg);
-    left: -1.75em;
-    top: 1em;
   }
 }
 /*webkit-sassui-dealcard End*/

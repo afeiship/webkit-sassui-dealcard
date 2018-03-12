@@ -20,17 +20,34 @@ body {
   z-index: 1;
 }
 
+.test-webkit-sassui-dealcard[data-direction=tr] {
+  right: 0;
+}
+
+.test-webkit-sassui-dealcard[data-direction=tr]:after {
+  -webkit-transform: rotateZ(45deg);
+  top: 1em;
+  right: -1.75em;
+}
+
+.test-webkit-sassui-dealcard[data-direction=lt] {
+  left: 0;
+}
+
+.test-webkit-sassui-dealcard[data-direction=lt]:after {
+  -webkit-transform: rotateZ(-45deg);
+  left: -1.75em;
+  top: 1em;
+}
+
 .test-webkit-sassui-dealcard:after {
   content: attr(data-content);
   font-size: 1.2em;
-  background: #06c1ae;
+  background: #f60;
   color: #fff;
   padding: 0.25em;
   line-height: 1.23em;
   position: absolute;
   width: 6.5em;
   text-align: center;
-  -webkit-transform: rotateZ(-45deg);
-  left: -1.75em;
-  top: 1em;
 }
