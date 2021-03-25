@@ -3,14 +3,14 @@
  * description: Webkit sass ui module for dealcard.
  * homepage: https://github.com/afeiship/wsui-dealcard
  * version: 1.0.0
- * date: 2021-03-25 22:31:21
+ * date: 2021-03-25 22:32:58
  * license: MIT
  */
 
 /*wsui-dealcard Start*/
-@mixin wsui-dealcard($inFontSize: 10px, $inBgColor: #f60) {
+@mixin wsui-dealcard($in-font-size: 10px, $in-bg-color: #f60) {
   //Your mixin code goes here.
-  font-size: $inFontSize;
+  font-size: $in-font-size;
   position: absolute;
   overflow: hidden;
   width: 10em;
@@ -20,7 +20,7 @@
   &[data-direction="tr"] {
     right: 0;
     &:after {
-      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
       top: 1em;
       right: -1.75em;
     }
@@ -28,7 +28,7 @@
   &[data-direction="tl"] {
     left: 0;
     &:after {
-      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
       left: -1.75em;
       top: 1em;
     }
@@ -37,7 +37,7 @@
   &:after {
     content: attr(data-content);
     font-size: 1.2em;
-    background: $inBgColor;
+    background: $in-bg-color;
     color: #fff;
     padding: 0.25em;
     line-height: 1.23em;
