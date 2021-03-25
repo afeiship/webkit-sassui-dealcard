@@ -1,5 +1,14 @@
-/*webkit-sassui-dealcard Start*/
-@mixin webkit-sassui-dealcard($inFontSize:10px,$inBgColor:#f60) {
+/*!
+ * name: @jswork/wsui-dealcard
+ * description: Webkit sass ui module for dealcard.
+ * homepage: https://github.com/afeiship/wsui-dealcard
+ * version: 1.0.0
+ * date: 2021-03-25 22:31:21
+ * license: MIT
+ */
+
+/*wsui-dealcard Start*/
+@mixin wsui-dealcard($inFontSize: 10px, $inBgColor: #f60) {
   //Your mixin code goes here.
   font-size: $inFontSize;
   position: absolute;
@@ -8,17 +17,17 @@
   height: 10em;
   z-index: 1;
 
-  &[data-direction=tr]{
+  &[data-direction="tr"] {
     right: 0;
-    &:after{
+    &:after {
       -webkit-transform: rotateZ(45deg);
       top: 1em;
       right: -1.75em;
     }
   }
-  &[data-direction=lt]{
-    left:0;
-    &:after{
+  &[data-direction="tl"] {
+    left: 0;
+    &:after {
       -webkit-transform: rotateZ(-45deg);
       left: -1.75em;
       top: 1em;
@@ -27,7 +36,7 @@
 
   &:after {
     content: attr(data-content);
-    font-size:1.2em;
+    font-size: 1.2em;
     background: $inBgColor;
     color: #fff;
     padding: 0.25em;
@@ -37,4 +46,4 @@
     text-align: center;
   }
 }
-/*webkit-sassui-dealcard End*/
+/*wsui-dealcard End*/

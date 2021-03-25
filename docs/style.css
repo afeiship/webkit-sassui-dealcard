@@ -1,5 +1,5 @@
-/*webkit-sassui-dealcard Start*/
-/*webkit-sassui-dealcard End*/
+/*wsui-dealcard Start*/
+/*wsui-dealcard End*/
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -12,7 +12,7 @@ body {
   margin: 20px auto;
 }
 
-.test-webkit-sassui-dealcard {
+.test-wsui-dealcard {
   font-size: 10px;
   position: absolute;
   overflow: hidden;
@@ -21,27 +21,27 @@ body {
   z-index: 1;
 }
 
-.test-webkit-sassui-dealcard[data-direction=tr] {
+.test-wsui-dealcard[data-direction="tr"] {
   right: 0;
 }
 
-.test-webkit-sassui-dealcard[data-direction=tr]:after {
+.test-wsui-dealcard[data-direction="tr"]:after {
   -webkit-transform: rotateZ(45deg);
   top: 1em;
   right: -1.75em;
 }
 
-.test-webkit-sassui-dealcard[data-direction=lt] {
+.test-wsui-dealcard[data-direction="tl"] {
   left: 0;
 }
 
-.test-webkit-sassui-dealcard[data-direction=lt]:after {
+.test-wsui-dealcard[data-direction="tl"]:after {
   -webkit-transform: rotateZ(-45deg);
   left: -1.75em;
   top: 1em;
 }
 
-.test-webkit-sassui-dealcard:after {
+.test-wsui-dealcard:after {
   content: attr(data-content);
   font-size: 1.2em;
   background: #f60;

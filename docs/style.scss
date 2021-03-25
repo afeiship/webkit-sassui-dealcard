@@ -1,4 +1,5 @@
-@import "../dist/webkit-sassui-dealcard.scss";
+@import "../src/index.scss";
+
 body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -9,6 +10,6 @@ body{
   border: 1px solid #eee;
   margin: 20px auto;
 }
-.test-webkit-sassui-dealcard{
-  @include webkit-sassui-dealcard();
+.test-wsui-dealcard{
+  @include wsui-dealcard();
 }
