@@ -19,6 +19,7 @@ body {
   width: 10em;
   height: 10em;
   z-index: 1;
+  top: 0;
 }
 
 .test-wsui-dealcard[data-direction="tr"] {
