@@ -1,6 +1,6 @@
 {
   "name": "@jswork/wsui-dealcard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webkit sass ui module for dealcard.",
   "homepage": "https://github.com/afeiship/wsui-dealcard",
   "author": {
@@ -34,6 +34,7 @@
   "keywords": [
     "webkit",
     "sassui",
-    "dealcard"
+    "dealcard",
+    "wsui"
   ]
 }
